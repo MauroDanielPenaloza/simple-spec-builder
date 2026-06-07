@@ -37,9 +37,7 @@ La plantilla oficial del equipo para el formato de spec está en **[templates/en
 
 ##### Documento `open-questions.md` — generación obligatoria
 
-**Cuándo generarlo:** Siempre que al redactar o revisar las specs del PBI se detecten blockers,
-ambigüedades o inconsistencias que requieran una decisión del tech lead o del equipo antes de implementar.
-No es un artefacto opcional: si hay al menos un ítem sin resolver, el documento debe existir.
+**Cuándo generarlo:** Es obligatorio generar el archivo `open-questions.md` al momento de la explotación y generación de las especificaciones (`spec-*.md`) si se encuentran blockers, ambigüedades o inconsistencias funcionales o técnicas. No es un artefacto opcional: si hay al menos un ítem sin resolver o bajo discusión, el documento debe crearse y completarse inmediatamente.
 
 **Regla de actualización:** Cada vez que el usuario responde una decisión abierta en el documento,
 reflejar el cambio en la spec correspondiente y marcar el ítem como cerrado en el resumen final.
@@ -136,7 +134,10 @@ El agente debe determinar si la solicitud es una redacción/refinamiento especí
 5. **¿Los Criterios de Aceptación arrastran validaciones excesivas o incluyen requisitos como "Cargar rápido"?**
    * SÍ: Refina y aplica **Pattern 13** fragmentando criterios largos. Aplica **Pattern 7 y 8** para separar Restricciones Globales (NFRs) y DoD.
    * NO: Procede a estructurar en sintaxis BDD/Gherkin.
-6. **¿El usuario tiene claro cómo medir el impacto tras su despliegue?**
+6. **Al momento de generar o refinar las specs, ¿se detectaron blockers, ambigüedades o inconsistencias?**
+   * SÍ: **Generar obligatoriamente el archivo `open-questions.md`** detallando todos los puntos a resolver antes de implementar.
+   * NO: Continúa al paso 7.
+7. **¿El usuario tiene claro cómo medir el impacto tras su despliegue?**
    * NO: Incorpora a la discusión métricas de seguimiento (*Consequences* / Pattern 1).
    * SÍ: Genera la historia ágil final.
 
