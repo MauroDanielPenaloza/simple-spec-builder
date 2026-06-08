@@ -7,6 +7,8 @@ Use esta plantilla cuando documentes historias bajo **`.tasks/<ticket>/`** (ej. 
 |---------|-----------|
 | `index-spec.md` | Índice: fuentes, orden de ejecución, dependencias entre specs, mapeo global campo-a-campo si aplica. |
 | `spec-<NN>-<nombre-kebab>.md` | Una historia/slice vertical por archivo; `<NN>` = `01`, `02`, … |
+| `open-questions.md` | Registro de decisiones de negocio y preguntas técnicas o bloqueantes. |
+| `solution-diagrams.md` | Diagramas técnicos obligatorios de la solución (secuencia, clases y otros diagramas de soporte). |
 
 **Idioma:** historias y Gherkin **en inglés** por defecto (equipo); encabezados pueden seguir el template funcional en español como en esta plantilla.
 

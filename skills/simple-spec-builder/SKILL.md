@@ -32,8 +32,10 @@ Para trabajo en este repositorio con cortes verticales documentados en disco:
 | Índice y orden de ejecución | `.tasks/<PBI-u-otro-id>/index-spec.md` |
 | Una historia/slice por archivo | `.tasks/<id>/spec-<NN>-<nombre-kebab>.md` |
 | Toma de decisiones | `.tasks/<id>/open-questions.md` |
+| Diagramas de la solución | `.tasks/<id>/solution-diagrams.md` |
 
 La plantilla oficial del equipo para el formato de spec está en **[templates/enriched-template.md](./templates/enriched-template.md)**.
+La plantilla oficial para los diagramas de la solución está en **[templates/solution-diagrams.md](./templates/solution-diagrams.md)**.
 
 ##### Documento `open-questions.md` — generación obligatoria
 
@@ -44,6 +46,18 @@ reflejar el cambio en la spec correspondiente y marcar el ítem como cerrado en 
 
 La estructura completa del documento, las reglas de formato y un ejemplo real están en
 **[templates/open-questions.md](./templates/open-questions.md)**.
+
+##### Documento `solution-diagrams.md` — generación obligatoria
+
+**Cuándo generarlo:** Es obligatorio generar el archivo `solution-diagrams.md` para plasmar el diseño técnico y los diagramas visuales de la solución especificada.
+
+Este archivo debe crearse inmediatamente e incluir:
+1. Un **Diagrama de Secuencia** que detalle el flujo de interacciones y llamadas entre componentes, actores y sistemas.
+2. Un **Diagrama de Clases** que exponga la estructura estática, relaciones, atributos y métodos de la solución.
+3. Un **Espacio o Placeholder para Diagrama Adicional** que facilite comprender otros aspectos de la solución (ej. diagrama de estados, flujo de datos o arquitectura de componentes).
+
+La plantilla y la estructura completa de este documento están en
+**[templates/solution-diagrams.md](./templates/solution-diagrams.md)**.
 
 --------------------------------------------------------------------------------
 
@@ -137,7 +151,9 @@ El agente debe determinar si la solicitud es una redacción/refinamiento especí
 6. **Al momento de generar o refinar las specs, ¿se detectaron blockers, ambigüedades o inconsistencias?**
    * SÍ: **Generar obligatoriamente el archivo `open-questions.md`** detallando todos los puntos a resolver antes de implementar.
    * NO: Continúa al paso 7.
-7. **¿El usuario tiene claro cómo medir el impacto tras su despliegue?**
+7. **Generación obligatoria de diagramas de la solución:**
+   * **Generar obligatoriamente el archivo `solution-diagrams.md`** que contenga un diagrama de secuencia del flujo de la solución, un diagrama de clases del diseño técnico y un espacio para diagramas adicionales de soporte que ayuden a ilustrar el desarrollo.
+8. **¿El usuario tiene claro cómo medir el impacto tras su despliegue?**
    * NO: Incorpora a la discusión métricas de seguimiento (*Consequences* / Pattern 1).
    * SÍ: Genera la historia ágil final.
 
@@ -198,4 +214,5 @@ Si el usuario solicita "mapear", "crear un flujo", o "definir un MVP":
 
 * **Guía de Calidad**: [Guías INVEST y Calidad de Historias de Usuario](./invest-guidelines.md)
 * **Template HTML de referencia**: [templates/user_story_template.md](./templates/user_story_template.md)
+* **Template de Diagramas de Solución**: [templates/solution-diagrams.md](./templates/solution-diagrams.md)
 * **Metodología Mapeo**: [*User Story Mapping* por Jeff Patton (Conceptos: Backbone, Narrative Flow, Outcomes > Output, Slicing)](./templates/key_concept_jeff_patton.md)
