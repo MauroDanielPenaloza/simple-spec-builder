@@ -66,7 +66,7 @@ The agent will automatically fill in the final Summary table and update the corr
 
 ---
 
-## Summary
+## Summary (Only for Agent, do not edit this table manually)
 
 | ID | Spec  | Impact  | Short description                  | Decision |
 |----|-------|---------|------------------------------------|----------|
