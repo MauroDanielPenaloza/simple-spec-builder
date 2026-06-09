@@ -1,22 +1,22 @@
-# Template de Historia de Usuario
+# User Story Template
 
-**Título:** [Un nombre corto y descriptivo que facilite la conversación]
-**ID:** [Identificador único, ej. HU-123]
+**Title:** [A short and descriptive name to facilitate conversation]
+**ID:** [Unique identifier, e.g., US-123]
 
-### Descripción (Perspectiva del Usuario)
-*   **Como** [Rol del usuario / Arquetipo o User Persona]
-*   **Quiero** [Objetivo principal o funcionalidad que desea lograr]
-*   **Para poder** [Beneficio, razón o problema que se resuelve]
+### Description (User Perspective)
+*   **As a** [User role / Archetype or User Persona]
+*   **I want** [Main goal or feature they want to achieve]
+*   **So that** [Benefit, reason, or problem being solved]
 
-### Criterios de Aceptación (BDD / Gherkin)
-*El detalle de cómo validar que la historia cumple con las expectativas, dividiendo flujos ideales (Happy flow) de flujos de error (Unhappy flow).*
+### Acceptance Criteria (BDD / Gherkin)
+*The details of how to validate that the story meets expectations, dividing ideal flows (Happy flow) from error flows (Unhappy flow).*
 
-**Escenario 1: [Nombre del escenario de éxito u error]**
-*   **Dado que (Given):** [El contexto inicial o precondiciones del sistema]
-*   **Cuando (When):** [El evento, acción o detonante que realiza el usuario]
-*   **Entonces (Then):** [El resultado exacto y comprobable esperado por el sistema]
+**Scenario 1: [Name of success or error scenario]**
+*   **Given:** [The initial context or system preconditions]
+*   **When:** [The event, action, or trigger performed by the user]
+*   **Then:** [The exact and verifiable outcome expected from the system]
 
-### Metadatos
-*   **Estimación (Puntos de Historia):** [Tamaño relativo en la serie Fibonacci]
-*   **Valor de Negocio / Prioridad:** [Retorno esperado, prioridad WSJF o MoSCoW]
-*   **Requerimientos No Funcionales (NFRs):** [Restricciones de calidad como seguridad, accesibilidad o tiempos de carga]
+### Metadata
+*   **Estimation (Story Points):** [Relative size in the Fibonacci sequence]
+*   **Business Value / Priority:** [Expected return, WSJF priority, or MoSCoW]
+*   **Non-Functional Requirements (NFRs):** [Quality constraints such as security, accessibility, or loading times]

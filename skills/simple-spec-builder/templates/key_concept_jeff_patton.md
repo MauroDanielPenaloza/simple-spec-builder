@@ -1,15 +1,15 @@
-# Metodología de Mapeo: User Story Mapping
+# Mapping Methodology: User Story Mapping
 
-El User Story Mapping es una técnica colaborativa para descubrir y visualizar la totalidad del producto, solucionando el problema del "backlog plano" donde se pierde la perspectiva general.
+User Story Mapping is a collaborative technique to discover and visualize the entire product, solving the "flat backlog" problem where the big picture is lost.
 
-**1. Resultados sobre Producción (Outcomes > Output)**
-El objetivo de hacer un software no es construir más características o producir más líneas de código (Output), sino maximizar el impacto y resolver problemas reales (Outcome). La meta es cambiar el mundo del usuario de forma positiva.
+**1. Outcomes over Output (Outcomes > Output)**
+The goal of building software is not to create more features or produce more lines of code (Output), but to maximize impact and solve real problems (Outcome). The goal is to change the user's world in a positive way.
 
-**2. Columna Vertebral (Backbone)**
-Es la parte superior del mapa que organiza las actividades de alto nivel y los pasos principales de un usuario. Funciona como el "esqueleto" del producto sobre el que se estructuran verticalmente los detalles.
+**2. Backbone**
+This is the top part of the map that organizes high-level activities and a user's main steps. It works as the product's "skeleton" upon which details are vertically structured.
 
-**3. Flujo Narrativo (Narrative Flow)**
-Es el orden cronológico en el que se organizan las actividades en la columna vertebral. Leyendo el mapa de izquierda a derecha, se puede contar el "viaje" del usuario usando conjunciones como "...y entonces él hace esto".
+**3. Narrative Flow**
+This is the chronological order in which activities are organized on the backbone. Reading the map from left to right, you can tell the user's "journey" using conjunctions like "...and then they do this".
 
-**4. División y MVP (Slicing)**
-A medida que el mapa crece hacia abajo con detalles, tareas y alternativas, se trazan líneas horizontales ("slices" o recortes) para separar lo que es imprescindible de lo que puede esperar. El primer recorte agrupa las historias necesarias para formar un Mínimo Producto Viable o "Solución Viable Mínima", permitiendo lanzar al mercado algo pequeño pero funcional y entregar valor antes.
+**4. Slicing and MVP (Slicing)**
+As the map grows downward with details, tasks, and alternatives, horizontal lines ("slices") are drawn to separate what is essential from what can wait. The first slice groups the stories needed to form a Minimum Viable Product or "Minimum Viable Solution", allowing a small but functional product to be released to the market and deliver value sooner.

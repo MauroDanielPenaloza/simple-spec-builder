@@ -1,13 +1,13 @@
 # Simple Spec Builder
-Ssb es una skill que ayuda a la explotación de las historias de usuario que se desprenden de una tarea, al mismo tiempo que permite definir las especificaciones de las historias que va a generar el agente de desarrollo.
+Ssb is a skill that helps in the decomposition and exploration of user stories arising from a task, while also allowing the definition of specifications for the stories that the development agent will generate.
 
-## Flujo de trabajo recomendado
+## Recommended Workflow
 
-1. Crear una carpeta `.tasks` dentro del repositorio raíz.
-1. Crear una subcarpeta con el ID de la tarea a realizar, por ejemplo: `.tasks/EXA-1001`.
-1. Dentro de la subcarpeta creada en el punto 2, crear un archivo llamado `raw-requirement.md` donde ponemos el contenido del requerimiento que vamos a trabajar en esta tarea.
-1. Correr la skill para que nos explote el requerimiento en historias de usuario y especificaciones para cada una de ellas. Generará un archivo `index-spec.md` que contiene el orden de ejecución de las specs y otro llamado `open-questions.md` para resolver inconsistencias, ambigüedades y otros problemas que hayan surgido en la explotación.
-1. Resolver cada una de las preguntas en `open-questions.md` para explorar la solución. En este momento se pueden corregir las specs generadas en el paso anterior corrigiendo cada parte.
-1. Correr nuevamente el agente para que nos ayude a refinar las especificaciones de las historias de usuario.
-1. Una vez cerrado el loop de resolución de ambigüedades procedemos con el modo plan.
-1. Con un plan cerrado corremos el agente para que construya la solución.
+1. Create a `.tasks` folder within the root of the repository.
+1. Create a subfolder with the ID of the task to be performed, for example: `.tasks/EXA-1001`.
+1. Within the subfolder created in step 2, create a file named `raw-requirement.md` where we place the contents of the requirement to be worked on in this task.
+1. Run the skill to decompose the requirement into user stories and specifications for each of them. It will generate an `index-spec.md` file containing the execution order of the specs, and another called `open-questions.md` to resolve inconsistencies, ambiguities, and other issues that arose during decomposition.
+1. Resolve each of the questions in `open-questions.md` to explore the solution. At this point, the specs generated in the previous step can be refined and corrected.
+1. Run the agent again to help refine the user story specifications.
+1. Once the ambiguity resolution loop is closed, proceed to plan mode.
+1. With a finalized plan, run the agent to build the solution.

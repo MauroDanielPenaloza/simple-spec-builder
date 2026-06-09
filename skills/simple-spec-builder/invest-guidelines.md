@@ -1,19 +1,19 @@
-# Guías INVEST y Calidad de Historias de Usuario
+# INVEST Guidelines and User Story Quality
 
-Las historias de usuario son el corazón de la agilidad porque crean un puente entre las necesidades del usuario y el trabajo del equipo.
-Para asegurar que una historia tiene la calidad suficiente antes de ser desarrollada, debe cumplir con el método **INVEST**, desarrollado por Bill Wake:
+User stories are the heart of agility because they build a bridge between user needs and the team's work.
+To ensure a story has sufficient quality before being developed, it must comply with the **INVEST** method, developed by Bill Wake:
 
-- **Independiente (Independent):** Las historias deben poder planificarse e implementarse en cualquier orden, evitando dependencias estrictas que bloqueen el desarrollo.
-- **Negociable (Negotiable):** Una historia no es un contrato detallado, sino una descripción corta y abierta a futuros refinamientos a través del diálogo con el cliente.
-- **Valiosa (Valuable):** Toda historia de usuario tiene que aportar un valor real y medible al negocio o al usuario final.
-- **Estimable (Estimable):** El equipo debe comprender la historia lo suficiente para poder aproximar su esfuerzo de desarrollo y complejidad.
-- **Pequeña (Small):** El tamaño de la historia debe permitir que se complete en unos pocos días o, como máximo, en un ciclo de iteración o sprint.
-- **Comprobable (Testable):** Deben existir criterios claros para poder probar la historia y confirmar que la funcionalidad está terminada sin lugar a ambigüedades.
+- **Independent:** Stories should be planable and implementable in any order, avoiding strict dependencies that block development.
+- **Negotiable:** A story is not a detailed contract, but a short description open to future refinements through dialogue with the customer.
+- **Valuable:** Every user story must bring real, measurable value to the business or the end user.
+- **Estimable:** The team must understand the story well enough to estimate its development effort and complexity.
+- **Small:** The story size should allow it to be completed in a few days or, at most, within a single iteration or sprint.
+- **Testable:** Clear criteria must exist to test the story and confirm that the functionality is complete without ambiguity.
 
-**Criterios SMART y las 3Cs**
-Los criterios de aceptación de cada historia deben ser **SMART**: Específicos, Medibles, Alcanzables, Relevantes y Limitados en el tiempo.
-El ciclo de vida de la historia siempre debe basarse en la fórmula de las **3Cs** de Ron Jeffries:
+**SMART Criteria and the 3Cs**
+The acceptance criteria for each story must be **SMART**: Specific, Measurable, Achievable, Relevant, and Time-bound.
+The lifecycle of the story should always be based on Ron Jeffries' **3Cs** formula:
 
-1.  **Card (Tarjeta):** Se escribe la idea inicial para recordar y prometer una conversación posterior.
-2.  **Conversation (Conversación):** El equipo dialoga para detallar, cuestionar y entender profundamente la necesidad.
-3.  **Confirmation (Confirmación):** Se establecen y acuerdan los criterios de aceptación que el software deberá superar.
+1.  **Card:** The initial idea is written down to remember and promise a future conversation.
+2.  **Conversation:** The team discusses to detail, question, and deeply understand the need.
+3.  **Confirmation:** Acceptance criteria that the software must pass are established and agreed upon.

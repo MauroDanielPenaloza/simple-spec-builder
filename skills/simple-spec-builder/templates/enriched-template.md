@@ -1,28 +1,28 @@
-# User Story – plantilla enriquecida
+# User Story – Enriched Template
 
-Use esta plantilla cuando documentes historias bajo **`.tasks/<ticket>/`** (ej. `PBI-24287`; el identificador es variable).  
-**Convenciones de archivos (misma carpeta del ticket):**
+Use this template when documenting stories under **`.tasks/<ticket>/`** (e.g., `PBI-24287`; the identifier varies).  
+**File conventions (same ticket folder):**
 
-| Archivo | Propósito |
+| File | Purpose |
 |---------|-----------|
-| `index-spec.md` | Índice: fuentes, orden de ejecución, dependencias entre specs, mapeo global campo-a-campo si aplica. |
-| `spec-<NN>-<nombre-kebab>.md` | Una historia/slice vertical por archivo; `<NN>` = `01`, `02`, … |
-| `open-questions.md` | Registro de decisiones de negocio y preguntas técnicas o bloqueantes. |
-| `solution-diagrams.md` | Diagramas técnicos obligatorios de la solución (secuencia, clases y otros diagramas de soporte). |
+| `index-spec.md` | Index: sources, execution order, dependencies between specs, global field-to-field mapping if applicable. |
+| `spec-<NN>-<kebab-name>.md` | One story/vertical slice per file; `<NN>` = `01`, `02`, … |
+| `open-questions.md` | Log of business decisions and technical or blocking questions. |
+| `solution-diagrams.md` | Mandatory technical diagrams of the solution (sequence, class, and other supporting diagrams). |
 
-**Idioma:** historias y Gherkin **en inglés** por defecto (equipo); encabezados pueden seguir el template funcional en español como en esta plantilla.
-
----
-
-## Plantilla por archivo — `spec-<NN>-*.md`
-
-Copiar secciones que apliquen; omitir las vacías.
+**Language:** Stories and Gherkin **in English** by default (team); headers can follow the functional template in English (recommended).
 
 ---
 
-### `# Descripcion de User Story`
+## File Template — `spec-<NN>-*.md`
 
-Un párrafo corto (qué problema resuelve este slice y cómo encaja en la épica).
+Copy sections that apply; omit empty ones.
+
+---
+
+### `# User Story Description`
+
+A short paragraph (what problem this slice solves and how it fits into the epic).
 
 ---
 
@@ -36,100 +36,100 @@ Un párrafo corto (qué problema resuelve este slice y cómo encaja en la épica
 
 ---
 
-### `# Análisis`
+### `# Analysis`
 
 #### Approach
 
-Breve texto: estrategia de solución (vertical slice), supuestos, alcance explícito / fuera de alcance.
+Brief text: solution strategy (vertical slice), assumptions, explicit in-scope / out-of-scope.
 
-#### API Controller (este spec)
+#### API Controller (this spec)
 
-Tabla `Method | Route | Purpose`, luego fragmentos JSON:
+`Method | Route | Purpose` table, then JSON snippets:
 
-- Request (cuando aplique): `Content-Type`, ejemplo `application/json`.
-- Response (códigos esperados según controller actual).
-- **Validaciones de entrada** (FluentValidation / DataAnnotations): opcionalidad, longitudes, tipos — sin duplicar DoD genérica.
+- Request (when applicable): `Content-Type`, example `application/json`.
+- Response (expected status codes based on current controller).
+- **Input validations** (FluentValidation / DataAnnotations): optionality, lengths, types — without duplicating generic DoD.
 
 ---
 
-### `# Punto de Arranque`
+### `# Starting Point`
 
-Tabla de ejemplo:
+Example table:
 
 | | |
 | -- | -- |
-| **Proyecto** | `current-project`, `Core`, etc. |
-| **Clases** | Rutas de archivo desde raíz repo (`src/…`). |
-| **Método / mapping** | Qué método o perfil AutoMapper tocar. |
+| **Project** | `current-project`, `Core`, etc. |
+| **Classes** | File paths from repo root (`src/…`). |
+| **Method / mapping** | Which method or AutoMapper profile to modify. |
 
 ---
 
-### `# Context` (opcional)
+### `# Context` (optional)
 
-Enlaces relativos a `raw-definition.md`, `frontend-change-definition.md`, otros specs (`spec-02-…`).
+Relative links to `raw-definition.md`, `frontend-change-definition.md`, other specs (`spec-02-…`).
 
 ---
 
-### `# Criterio de Aceptación`
+### `# Acceptance Criteria`
 
-Escenarios **Given / When / Then** (inglés recomendado). Primero **happy path**, luego **unhappy** / autorización / validación.
+**Given / When / Then** scenarios (English recommended). First **happy path**, then **unhappy** / authorization / validation.
 
 ---
 
 ### `# Test Plan`
 
-#### Contexto
+#### Context
 
-Qué datos, ambiente o policies hacen falta.
+What data, environment, or policies are required.
 
-#### Escenarios
+#### Scenarios
 
-Tabla numerada: Éxito / Éxito alternativo / Error / Regresión.
+Numbered table: Success / Alternative success / Error / Regression.
 
 ---
 
-### `# Validacion post implementacion`
+### `# Post-implementation Validation`
 
-Lista corta alineada con el repo, por ejemplo:
+Short list aligned with the repo, for example:
 
 1. `mvn clean install`
-2. `mvn test` en proyectos de test relevantes
-3. Arranque local y prueba manual o funcional si aplica
+2. `mvn test` in relevant test projects
+3. Local startup and manual or functional test if applicable
 
 ---
 
 ### `# Non-functional notes`
 
-NFRs globales (performance, seguridad por políticas); **no** meter DoD (tests unitarios genéricos, code review) dentro de los AC.
+Global NFRs (performance, policy security); **do not** include DoD (generic unit tests, code review) within the AC.
 
 ---
 
-### `# Open questions` (opcional)
+### `# Open questions` (optional)
 
-Bullets si hay ambigüedad de negocio pendiente de PO.
+Bullets if there is business ambiguity pending PO.
 
 ---
 
-## Plantilla — `index-spec.md`
+## Template — `index-spec.md`
 
 ```markdown
 # <TICKET> — specification index
 
 ## Source artifacts
 
-Tabla: archivo | propósito.
+Table: file | purpose.
 
-## Field mapping (contract ↔ Core) — cuando aplique
+## Field mapping (contract ↔ Core) — when applicable
 
-Tabla resumen JSON ↔ DTO ↔ dominio; enlaces a cada spec.
+Summary table JSON ↔ DTO ↔ domain; links to each spec.
 
 ## Execution order
 
-Tabla: Order | spec file | Summary | Depends on
+Table: Order | spec file | Summary | Depends on
 
 ## Suggested increments / Backbone
 
-Narrativa MVP → mejoras (Story Mapping / Walking Skeleton).
+MVP narrative → enhancements (Story Mapping / Walking Skeleton).
 ```
 
-Referencia cruzada a esta plantilla desde la skill [simple-spec-builder](../SKILL.md).
+Cross-reference to this template from the [simple-spec-builder](../SKILL.md) skill.
