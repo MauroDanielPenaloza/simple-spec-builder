@@ -41,7 +41,7 @@ The official template for solution diagrams is in **[templates/solution-diagrams
 
 **When to generate:** It is mandatory to generate the `open-questions.md` file during the decomposition and generation of specifications (`spec-*.md`) if blockers, ambiguities, or functional/technical inconsistencies are found. This is not an optional artifact: if there is at least one unresolved or debated item, the document must be created and completed immediately.
 
-**Update rule:** Every time the user responds to an open decision in the document, reflect the change in the corresponding spec and mark the item as closed in the final summary.
+**Update rule:** The user will indicate their choice simply by marking it with `[x]` (or filling in `Other:`). Once the user has marked their choices, the agent must automatically parse these selections, reflect the changes in the corresponding specifications, and fill in the decisions in the final summary table.
 
 The complete structure of the document, formatting rules, and a real-world example are in **[templates/open-questions.md](./templates/open-questions.md)**.
 

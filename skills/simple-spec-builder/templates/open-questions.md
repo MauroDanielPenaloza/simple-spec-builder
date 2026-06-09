@@ -1,8 +1,8 @@
-# Decision Log — <PBI ID>
+# Open Questions Document — <PBI ID>
 
 Document for resolving blockers, risks, and inconsistencies detected across specs.
-Mark the chosen option with `[x]` and fill in **Decision:** with the selected letter.
-If no option fits, complete `Other:` with the correct answer.
+Simply mark the chosen option with `[x]` (or fill in `Other:`).
+The agent will automatically fill in the final Summary table and update the corresponding spec files.
 
 ---
 
@@ -22,7 +22,6 @@ If no option fits, complete `Other:` with the correct answer.
 
 - [ ] **Other:** ______
 
-**Decision:** ___
 **Notes:**
 
 ---
@@ -43,7 +42,6 @@ If no option fits, complete `Other:` with the correct answer.
 
 - [ ] **Other:** ______
 
-**Decision:** ___
 **Notes:**
 
 ---
@@ -64,7 +62,6 @@ If no option fits, complete `Other:` with the correct answer.
 
 - [ ] **Other:** ______
 
-**Decision:** ___
 **Notes:**
 
 ---
@@ -86,7 +83,7 @@ If no option fits, complete `Other:` with the correct answer.
 - **Max 4 predefined options** per item; if more exist, group the least likely ones.
 - **Context must state the consequence** of not resolving, not just describe the problem.
 - **Options must be mutually exclusive and actionable** — avoid vague options like "ask the TL" as the only choice.
-- **Update the spec** once a decision is made; mark the item closed in the summary table.
+- **Update the spec and summary table**: Once the user checks an option with `[x]`, the agent will automatically update the corresponding spec and fill in the decision in the Summary table.
 
 ---
 
@@ -108,5 +105,4 @@ fails at runtime. Both the month mapper (Enero–Diciembre) and the year mapper 
 
 - [ ] **Other:** ______
 
-**Decision:** ___
 **Notes:**
