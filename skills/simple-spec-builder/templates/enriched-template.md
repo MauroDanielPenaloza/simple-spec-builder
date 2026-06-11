@@ -42,14 +42,6 @@ A short paragraph (what problem this slice solves and how it fits into the epic)
 
 Brief text: solution strategy (vertical slice), assumptions, explicit in-scope / out-of-scope.
 
-#### API Controller (this spec)
-
-`Method | Route | Purpose` table, then JSON snippets:
-
-- Request (when applicable): `Content-Type`, example `application/json`.
-- Response (expected status codes based on current controller).
-- **Input validations** (FluentValidation / DataAnnotations): optionality, lengths, types — without duplicating generic DoD.
-
 ---
 
 ### `# Starting Point`
